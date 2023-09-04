@@ -9,19 +9,16 @@
   <body>
     <main>
       <!-- Header Start -->
-      <header style="background-color:white">
+      <header>
         <nav class="nav container">
           {% comment %} <img src="{% static 'images/logo.png' %}"width=136px> {% endcomment %}
-          <img src="{% static 'images/logo.png' %}" width="136" height="26">
+          <a href="https://effizient.ca"><img src="{% static 'images/logo.png' %}" width="136" height="26"></a>
 
 
-          <h2 class="nav_logo"><a href="https://effizient.ca"></a></h2>
+          <h2 class="nav_logo"></h2>
 
           <ul class="menu_items">
             <img src="{% static 'images/times.svg' %}" alt="timesicon" id="menu_toggle" />
-            <li><a href="{% url 'login' %}" class="nav_link"><b>Home</b></a></li>
-            <li><a href="about" class="nav_link"><b>About Us</b></a></li>
-            <li><a href="reg" class="nav_link"><b>Project</b></a></li>
           </ul>
           <img src="{% static 'images/bars.svg' %}" alt="timesicon" id="menu_toggle" />
         </nav>
@@ -32,10 +29,11 @@
       <section class="hero">
         <div class="row container">
           <div class="column">
-            <h2>SOP GENERATION TOOL <br />SOP?</h2>
-            <p>Statement of Purpose (SOP), also known as a Statement of Intent or Personal Statement, is a crucial component of a graduate school or college application. It is a written essay that allows applicants to express their academic and career goals, motivations, and reasons for pursuing a specific program or degree!</p>
+            <h2>{{email}}<br />Successfully Submitted !</h2>
+            <p>Thanks for choosing our tool!</p>
+            <p>Check your registered Mail for SOP generated PDF & DOCS</p>
             <div class="buttons">
-              <a href="https://effizient.ca"><button class="btn">Contact Us</button>
+             <a href="{% url 'login' %}"><button class="btn">Back</button></a>
             </div>
           </div>
           <div class="column">

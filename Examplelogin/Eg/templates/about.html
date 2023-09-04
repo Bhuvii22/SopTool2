@@ -19,9 +19,7 @@
 
           <ul class="menu_items">
             <img src="{% static 'images/times.svg' %}" alt="timesicon" id="menu_toggle" />
-            <li><a href="{% url 'login' %}" class="nav_link"><b>Home</b></a></li>
-            <li><a href="about" class="nav_link"><b>About Us</b></a></li>
-            <li><a href="reg" class="nav_link"><b>Project</b></a></li>
+            <a href="{% url 'login' %}"><button class="btn"><Home</button></a>
           </ul>
           <img src="{% static 'images/bars.svg' %}" alt="timesicon" id="menu_toggle" />
         </nav>
@@ -32,11 +30,11 @@
       <section class="hero">
         <div class="row container">
           <div class="column">
-            <h2>SOP GENERATION TOOL <br />SOP?</h2>
-            <p>Statement of Purpose (SOP), also known as a Statement of Intent or Personal Statement, is a crucial component of a graduate school or college application. It is a written essay that allows applicants to express their academic and career goals, motivations, and reasons for pursuing a specific program or degree!</p>
-            <div class="buttons">
-              <a href="https://effizient.ca"><button class="btn">Contact Us</button>
-            </div>
+            <h2>We provide Canadian immigration <br />and education solutions!</h2>
+            <p>Throughout your immigration journey, you might need constant support. Individual consultations are expensive, limited, and might not be the best for you. With the RCIC Helping Hand Program, at a nominal cost every month, you can have an RCIC by your side. Ask your questions, plan ahead, answer government requests, and stay on top of your game.</p>
+          <div class="buttons">
+            <a href="{% url 'login' %}"><button class="btn">Back</button></a>
+          </div>
           </div>
           <div class="column">
             <img src="{% static 'hero.png' %}" alt="heroImg" class="hero_img" />
